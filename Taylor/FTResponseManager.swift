@@ -31,7 +31,7 @@ class FTResponseManager: NSObject {
             let params = parameters["parameters"] as? [String: Any]
             return FTResponse(response: profilResponse(user: user, parameters: params),
                               view: FTViewManager().profilView(user: user))
-        case "Project":
+        case "Projects":
             guard let parameters = parameters else {
                 return nil
             }
@@ -46,11 +46,11 @@ class FTResponseManager: NSObject {
     }
     
     private func projectResponse (user: FTUser, parameters: [String: Any?]?) -> String? {
-        guard let projectName = parameters!["Project"] as? String else {
-            return "It seems that \(user.username) does not have started this project"
+        guard let projectName = parameters!["Project"] as? AIResponseParameter else {
+            return "It seems that this project does not exist :/"
         }
         
-        guard let project = user.project(name: projectName) else {
+        guard let project = user.project(name: projectName.stringValue) else {
             return "It seems that \(user.username) does not have started this project"
         }
         

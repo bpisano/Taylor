@@ -72,7 +72,7 @@ class FTRequestHandler: NSObject {
                     let response = FTResponseManager().response(intentName: intentName!, parameters: ["user": user, "parameters": parameters])
                     completion?(nil, response)
                 })
-            case "Project":
+            case "Projects":
                 guard let username = parameters!["User"] as? AIResponseParameter else {
                     completion?(nil, nil)
                     return
