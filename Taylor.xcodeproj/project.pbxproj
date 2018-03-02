@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B365174184CDDFADDC15FA8 /* Pods_TaylorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */; };
+		3E415A24EB839C3AA9473B49 /* Pods_TaylorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B488187259975E76051DF3 /* Pods_TaylorTests.framework */; };
 		50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4100020496E400098CDA1 /* AppDelegate.swift */; };
-		50F4100320496E400098CDA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4100220496E400098CDA1 /* ViewController.swift */; };
-		50F4100520496E400098CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F4100420496E400098CDA1 /* Assets.xcassets */; };
-		50F4100820496E400098CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F4100620496E400098CDA1 /* Main.storyboard */; };
 		50F4101420496E400098CDA1 /* TaylorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101320496E400098CDA1 /* TaylorTests.swift */; };
 		50F4101F20496E400098CDA1 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101E20496E400098CDA1 /* TaylorUITests.swift */; };
+		50F4103E204971170098CDA1 /* FTLogIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102C204971150098CDA1 /* FTLogIndicator.swift */; };
+		50F4103F204971170098CDA1 /* FTExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102D204971150098CDA1 /* FTExampleView.swift */; };
+		50F41040204971170098CDA1 /* FTLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102E204971150098CDA1 /* FTLogView.swift */; };
+		50F41041204971170098CDA1 /* FTLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4102F204971150098CDA1 /* FTLogView.xib */; };
+		50F41042204971170098CDA1 /* FTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41030204971150098CDA1 /* FTMainViewController.swift */; };
+		50F41043204971170098CDA1 /* FTProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41031204971150098CDA1 /* FTProfilView.swift */; };
+		50F41044204971170098CDA1 /* FTExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F41032204971160098CDA1 /* FTExampleView.xib */; };
+		50F41045204971170098CDA1 /* FTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41033204971160098CDA1 /* FTResponse.swift */; };
+		50F41046204971170098CDA1 /* FTProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41034204971160098CDA1 /* FTProject.swift */; };
+		50F41047204971170098CDA1 /* FTViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41035204971160098CDA1 /* FTViewManager.swift */; };
+		50F41048204971170098CDA1 /* FTApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41036204971160098CDA1 /* FTApi.swift */; };
+		50F41049204971170098CDA1 /* FTRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41037204971160098CDA1 /* FTRequestHandler.swift */; };
+		50F4104A204971170098CDA1 /* FTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41038204971160098CDA1 /* FTUser.swift */; };
+		50F4104C204971170098CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F4103A204971160098CDA1 /* Assets.xcassets */; };
+		50F4104D204971170098CDA1 /* FTEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4103B204971170098CDA1 /* FTEventMonitor.swift */; };
+		50F4104E204971170098CDA1 /* FTProfilView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4103C204971170098CDA1 /* FTProfilView.xib */; };
+		50F4104F204971170098CDA1 /* FTResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4103D204971170098CDA1 /* FTResponseManager.swift */; };
+		50F410522049712C0098CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F410502049712C0098CDA1 /* Main.storyboard */; };
+		FDC0D8A6AEB92731FCE3DD51 /* Pods_Taylor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C313599F0BA40A4F82003A71 /* Pods_Taylor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08B488187259975E76051DF3 /* Pods_TaylorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4900C891EAFAB8561239DFD3 /* Pods-TaylorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorUITests/Pods-TaylorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		50F40FFD20496E400098CDA1 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4100020496E400098CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50F4100220496E400098CDA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50F4100420496E400098CDA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		50F4100720496E400098CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50F4100920496E400098CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F4100A20496E400098CDA1 /* Taylor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Taylor.entitlements; sourceTree = "<group>"; };
 		50F4100F20496E400098CDA1 /* TaylorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaylorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +64,30 @@
 		50F4101A20496E400098CDA1 /* TaylorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaylorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4101E20496E400098CDA1 /* TaylorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaylorUITests.swift; sourceTree = "<group>"; };
 		50F4102020496E400098CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F4102C204971150098CDA1 /* FTLogIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTLogIndicator.swift; sourceTree = "<group>"; };
+		50F4102D204971150098CDA1 /* FTExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTExampleView.swift; sourceTree = "<group>"; };
+		50F4102E204971150098CDA1 /* FTLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTLogView.swift; sourceTree = "<group>"; };
+		50F4102F204971150098CDA1 /* FTLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTLogView.xib; sourceTree = "<group>"; };
+		50F41030204971150098CDA1 /* FTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTMainViewController.swift; sourceTree = "<group>"; };
+		50F41031204971150098CDA1 /* FTProfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTProfilView.swift; sourceTree = "<group>"; };
+		50F41032204971160098CDA1 /* FTExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTExampleView.xib; sourceTree = "<group>"; };
+		50F41033204971160098CDA1 /* FTResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTResponse.swift; sourceTree = "<group>"; };
+		50F41034204971160098CDA1 /* FTProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTProject.swift; sourceTree = "<group>"; };
+		50F41035204971160098CDA1 /* FTViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTViewManager.swift; sourceTree = "<group>"; };
+		50F41036204971160098CDA1 /* FTApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTApi.swift; sourceTree = "<group>"; };
+		50F41037204971160098CDA1 /* FTRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTRequestHandler.swift; sourceTree = "<group>"; };
+		50F41038204971160098CDA1 /* FTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUser.swift; sourceTree = "<group>"; };
+		50F4103A204971160098CDA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../42IA/42IA/Assets.xcassets; sourceTree = "<group>"; };
+		50F4103B204971170098CDA1 /* FTEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTEventMonitor.swift; sourceTree = "<group>"; };
+		50F4103C204971170098CDA1 /* FTProfilView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTProfilView.xib; sourceTree = "<group>"; };
+		50F4103D204971170098CDA1 /* FTResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTResponseManager.swift; sourceTree = "<group>"; };
+		50F410512049712C0098CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../42IA/42IA/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E87D9AFBFC9E11D66C1D6EF /* Pods-TaylorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorTests/Pods-TaylorTests.release.xcconfig"; sourceTree = "<group>"; };
+		8273192CA91868A947A1A970 /* Pods-TaylorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorTests/Pods-TaylorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CEAAB6A569427C394CAC35E /* Pods-TaylorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorUITests/Pods-TaylorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B780AB882537304DFF33510 /* Pods-Taylor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taylor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taylor/Pods-Taylor.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF87B5971A346C8B13E7A9F /* Pods-Taylor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taylor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taylor/Pods-Taylor.release.xcconfig"; sourceTree = "<group>"; };
+		C313599F0BA40A4F82003A71 /* Pods_Taylor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Taylor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC0D8A6AEB92731FCE3DD51 /* Pods_Taylor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E415A24EB839C3AA9473B49 /* Pods_TaylorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B365174184CDDFADDC15FA8 /* Pods_TaylorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +125,8 @@
 				50F4101220496E400098CDA1 /* TaylorTests */,
 				50F4101D20496E400098CDA1 /* TaylorUITests */,
 				50F40FFE20496E400098CDA1 /* Products */,
+				B5B00F7CA2344B4864D27BC0 /* Pods */,
+				608ACDFEDE56DA2D7F161AD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +144,18 @@
 			isa = PBXGroup;
 			children = (
 				50F4100020496E400098CDA1 /* AppDelegate.swift */,
-				50F4100220496E400098CDA1 /* ViewController.swift */,
-				50F4100420496E400098CDA1 /* Assets.xcassets */,
-				50F4100620496E400098CDA1 /* Main.storyboard */,
+				50F4103B204971170098CDA1 /* FTEventMonitor.swift */,
+				50F41036204971160098CDA1 /* FTApi.swift */,
+				50F41038204971160098CDA1 /* FTUser.swift */,
+				50F41034204971160098CDA1 /* FTProject.swift */,
+				50F41033204971160098CDA1 /* FTResponse.swift */,
+				50F41037204971160098CDA1 /* FTRequestHandler.swift */,
+				50F4103D204971170098CDA1 /* FTResponseManager.swift */,
+				50F41035204971160098CDA1 /* FTViewManager.swift */,
+				50F41030204971150098CDA1 /* FTMainViewController.swift */,
+				50F410502049712C0098CDA1 /* Main.storyboard */,
+				50F41053204971D80098CDA1 /* Custom Views */,
+				50F4103A204971160098CDA1 /* Assets.xcassets */,
 				50F4100920496E400098CDA1 /* Info.plist */,
 				50F4100A20496E400098CDA1 /* Taylor.entitlements */,
 			);
@@ -124,6 +180,43 @@
 			path = TaylorUITests;
 			sourceTree = "<group>";
 		};
+		50F41053204971D80098CDA1 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				50F4102C204971150098CDA1 /* FTLogIndicator.swift */,
+				50F4102D204971150098CDA1 /* FTExampleView.swift */,
+				50F41032204971160098CDA1 /* FTExampleView.xib */,
+				50F4102E204971150098CDA1 /* FTLogView.swift */,
+				50F4102F204971150098CDA1 /* FTLogView.xib */,
+				50F41031204971150098CDA1 /* FTProfilView.swift */,
+				50F4103C204971170098CDA1 /* FTProfilView.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		608ACDFEDE56DA2D7F161AD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C313599F0BA40A4F82003A71 /* Pods_Taylor.framework */,
+				08B488187259975E76051DF3 /* Pods_TaylorTests.framework */,
+				25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B00F7CA2344B4864D27BC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B780AB882537304DFF33510 /* Pods-Taylor.debug.xcconfig */,
+				9DF87B5971A346C8B13E7A9F /* Pods-Taylor.release.xcconfig */,
+				8273192CA91868A947A1A970 /* Pods-TaylorTests.debug.xcconfig */,
+				6E87D9AFBFC9E11D66C1D6EF /* Pods-TaylorTests.release.xcconfig */,
+				8CEAAB6A569427C394CAC35E /* Pods-TaylorUITests.debug.xcconfig */,
+				4900C891EAFAB8561239DFD3 /* Pods-TaylorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F4102320496E400098CDA1 /* Build configuration list for PBXNativeTarget "Taylor" */;
 			buildPhases = (
+				B95B8BB982B347D82947172D /* [CP] Check Pods Manifest.lock */,
 				50F40FF920496E400098CDA1 /* Sources */,
 				50F40FFA20496E400098CDA1 /* Frameworks */,
 				50F40FFB20496E400098CDA1 /* Resources */,
+				E8432AB79350E50EDC616FD4 /* [CP] Embed Pods Frameworks */,
+				A1E4B00DD61FCE7CE28F48B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F4102620496E400098CDA1 /* Build configuration list for PBXNativeTarget "TaylorTests" */;
 			buildPhases = (
+				EE13D5189D867E2A368384CB /* [CP] Check Pods Manifest.lock */,
 				50F4100B20496E400098CDA1 /* Sources */,
 				50F4100C20496E400098CDA1 /* Frameworks */,
 				50F4100D20496E400098CDA1 /* Resources */,
+				C78A82F48C959EE934FAA3EB /* [CP] Embed Pods Frameworks */,
+				26511F4203C5E58D816C811A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50F4102920496E400098CDA1 /* Build configuration list for PBXNativeTarget "TaylorUITests" */;
 			buildPhases = (
+				40C8FE0E3CB289B411744CB0 /* [CP] Check Pods Manifest.lock */,
 				50F4101620496E400098CDA1 /* Sources */,
 				50F4101720496E400098CDA1 /* Frameworks */,
 				50F4101820496E400098CDA1 /* Resources */,
+				4D6BDC5F2677CCC77CA45162 /* [CP] Embed Pods Frameworks */,
+				E3746D5DBA28916014CF3D1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,8 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F4100520496E400098CDA1 /* Assets.xcassets in Resources */,
-				50F4100820496E400098CDA1 /* Main.storyboard in Resources */,
+				50F410522049712C0098CDA1 /* Main.storyboard in Resources */,
+				50F4104E204971170098CDA1 /* FTProfilView.xib in Resources */,
+				50F41041204971170098CDA1 /* FTLogView.xib in Resources */,
+				50F4104C204971170098CDA1 /* Assets.xcassets in Resources */,
+				50F41044204971170098CDA1 /* FTExampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +357,178 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26511F4203C5E58D816C811A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaylorTests/Pods-TaylorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C8FE0E3CB289B411744CB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaylorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D6BDC5F2677CCC77CA45162 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaylorUITests/Pods-TaylorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E4B00DD61FCE7CE28F48B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taylor/Pods-Taylor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B95B8BB982B347D82947172D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Taylor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C78A82F48C959EE934FAA3EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaylorTests/Pods-TaylorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3746D5DBA28916014CF3D1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaylorUITests/Pods-TaylorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8432AB79350E50EDC616FD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Taylor/Pods-Taylor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Taylor/Pods-Taylor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE13D5189D867E2A368384CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaylorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50F40FF920496E400098CDA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F4100320496E400098CDA1 /* ViewController.swift in Sources */,
+				50F4103E204971170098CDA1 /* FTLogIndicator.swift in Sources */,
+				50F41040204971170098CDA1 /* FTLogView.swift in Sources */,
+				50F41048204971170098CDA1 /* FTApi.swift in Sources */,
+				50F4104D204971170098CDA1 /* FTEventMonitor.swift in Sources */,
+				50F4104F204971170098CDA1 /* FTResponseManager.swift in Sources */,
+				50F41045204971170098CDA1 /* FTResponse.swift in Sources */,
+				50F4104A204971170098CDA1 /* FTUser.swift in Sources */,
+				50F41046204971170098CDA1 /* FTProject.swift in Sources */,
+				50F41047204971170098CDA1 /* FTViewManager.swift in Sources */,
+				50F41049204971170098CDA1 /* FTRequestHandler.swift in Sources */,
+				50F41043204971170098CDA1 /* FTProfilView.swift in Sources */,
+				50F41042204971170098CDA1 /* FTMainViewController.swift in Sources */,
+				50F4103F204971170098CDA1 /* FTExampleView.swift in Sources */,
 				50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,10 +565,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		50F4100620496E400098CDA1 /* Main.storyboard */ = {
+		50F410502049712C0098CDA1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				50F4100720496E400098CDA1 /* Base */,
+				50F410512049712C0098CDA1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -413,6 +684,7 @@
 		};
 		50F4102420496E400098CDA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B780AB882537304DFF33510 /* Pods-Taylor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Taylor/Taylor.entitlements;
@@ -428,6 +700,7 @@
 		};
 		50F4102520496E400098CDA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF87B5971A346C8B13E7A9F /* Pods-Taylor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Taylor/Taylor.entitlements;
@@ -443,6 +716,7 @@
 		};
 		50F4102720496E400098CDA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8273192CA91868A947A1A970 /* Pods-TaylorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,6 +733,7 @@
 		};
 		50F4102820496E400098CDA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E87D9AFBFC9E11D66C1D6EF /* Pods-TaylorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +750,7 @@
 		};
 		50F4102A20496E400098CDA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEAAB6A569427C394CAC35E /* Pods-TaylorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +766,7 @@
 		};
 		50F4102B20496E400098CDA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4900C891EAFAB8561239DFD3 /* Pods-TaylorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
