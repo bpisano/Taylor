@@ -44,8 +44,8 @@ class FTRequestHandler: NSObject {
                         return
                     }
                     
-                    guard user != nil else {
-                        completion?(nil, FTResponse(response: "I'm sorry, I was not able to connect to the server :/", view: nil))
+                    guard user != nil && user?.username != "" else {
+                        completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
                         return
                     }
                     
@@ -64,12 +64,27 @@ class FTRequestHandler: NSObject {
                         return
                     }
                     
-                    guard user != nil else {
+                    guard user != nil && user?.username != "" else {
                         completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
                         return
                     }
                     
-                    guard user!.username != "" else {
+                    let response = FTResponseManager().response(intentName: intentName!, parameters: ["user": user, "parameters": parameters])
+                    completion?(nil, response)
+                })
+            case "Project":
+                guard let username = parameters!["User"] as? AIResponseParameter else {
+                    completion?(nil, nil)
+                    return
+                }
+                
+                FTApi().getUser(username.stringValue, { (error, user) in
+                    guard error == nil else {
+                        completion?(error! as NSError, nil)
+                        return
+                    }
+                    
+                    guard user != nil && user?.username != "" else {
                         completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
                         return
                     }

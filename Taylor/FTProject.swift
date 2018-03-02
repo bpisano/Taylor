@@ -8,8 +8,17 @@
 
 import Cocoa
 
+enum FTProjectStatus {
+    case finished
+    case inProgress
+}
+
 struct FTProject {
+    var id: String
     var name: String
-    var finished: Bool
-    var mark: Int?
+    var displayName: String
+    var status: FTProjectStatus
+    var validated: Bool
+    var mark: Int
+    var cursusID: String
 }

@@ -25,4 +25,13 @@ struct FTUser {
     var location: String?
     var projects: [FTProject]
     var JSONData = JSON()
+    
+    func project(name: String) -> FTProject? {
+        for project in projects {
+            if project.name == name {
+                return project
+            }
+        }
+        return nil
+    }
 }

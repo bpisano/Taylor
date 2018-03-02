@@ -104,6 +104,7 @@ class FTApi: NSObject {
                 let wallet = jsonValue["wallet"].intValue
                 let isSatff = jsonValue["staff?"].boolValue
                 let location = jsonValue["location"] == JSON.null ? nil : jsonValue["location"].stringValue
+                let projects = self.projectList(json: jsonValue["projects_users"])
                 let user = FTUser(id: id,
                                   username: username,
                                   firstName: firstName,
@@ -114,13 +115,31 @@ class FTApi: NSObject {
                                   wallet: wallet,
                                   isStaff: isSatff,
                                   location: location,
-                                  projects: [],
+                                  projects: projects,
                                   JSONData: jsonValue)
                 completion?(nil, user)
             }
         }
     }
     
+    private func projectList(json data: JSON) -> [FTProject] {
+        var projects = [FTProject]()
+        
+        for projectJSON in data {
+            let id = projectJSON.1["id"].stringValue
+            let name = projectJSON.1["project"]["slug"].stringValue
+            let displayName = projectJSON.1["project"]["name"].stringValue
+            let status = projectJSON.1["status"].stringValue == "finished" ? FTProjectStatus.finished : FTProjectStatus.inProgress
+            let validated = projectJSON.1["validated?"].boolValue == true ? true : false
+            let mark = projectJSON.1["final_mark"] == JSON.null ? 0 : projectJSON.1["final_mark"].intValue
+            let cursusID = projectJSON.1["cursus_ids"].first?.0
+            let project = FTProject(id: id, name: name, displayName: displayName, status: status, validated: validated, mark: mark, cursusID: cursusID!)
+            projects.append(project)
+        }
+        return projects
+    }
+    
+    /*
     func getUserLocation(_ username: String, _ completion: ((_ error: Error?, _ location: String?) -> Void)?) {
         print("[42API] getting \(username) location...")
         
@@ -148,7 +167,7 @@ class FTApi: NSObject {
                 }
             }
         }
-    }
+    }*/
     
     func setCurrentUserID(_ id: String) {
         UserDefaults.standard.set(id, forKey: "currentUserID")
