@@ -44,25 +44,16 @@ class FTResponseManager: NSObject {
             return nil
         }
     }
-    
+    /*
     private func projectResponse (user: FTUser, parameters: [String: Any?]?) -> String? {
-        guard let projectName = parameters!["Project"] as? AIResponseParameter else {
+        let keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User"])
+        
+        guard keywords.contains(keyword: "Project") else {
             return "It seems that this project does not exist :/"
         }
         
-        guard let project = user.project(name: projectName.stringValue) else {
+        guard let projectName = keywords.keyword(key: "Project") else {
             return "It seems that \(user.username) does not have started this project"
-        }
-        
-        var keywrd: String?
-        var keywrdValue: String?
-        for parameter in parameters! {
-            let value = (parameter.value as? AIResponseParameter)?.stringValue
-            if parameter.key != "User" && parameter.key != "Profil" && value != "" {
-                keywrd = parameter.key
-                keywrdValue = value
-                break
-            }
         }
         
         guard let keyword = keywrd, let keywordValue = keywrdValue else {
@@ -97,77 +88,43 @@ class FTResponseManager: NSObject {
         default:
             return "Here is the \(project.displayName) of \(user.username)."
         }
-    }
+    }*/
     
     private func profilResponse(user: FTUser, parameters: [String: Any?]?) -> String? {
-        var keywrd: String?
-        var keywrdValue: String?
+        let keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User", "Profil"])
         
-        for parameter in parameters! {
-            let value = (parameter.value as? AIResponseParameter)?.stringValue
-            if parameter.key != "User" && parameter.key != "Profil" && value != "" {
-                keywrd = parameter.key
-                keywrdValue = value
-                break
-            }
+        guard let keyword = keywords.first else {
+            return FTResponseArray(responses: ["Here is the profil of \(user.username).",
+                                                "Here it is. That's \(user.username) !",
+                                                "\(user.username)... Okay here it is. Big applause."]).random()
         }
         
-        guard let keyword = keywrd, let keywordValue = keywrdValue else {
-            let profilTemplates = [
-                "Here is the profil of \(user.username).",
-                "Here it is. That's \(user.username) !",
-                "\(user.username)... Okay here it is. Big applause.",
-            ]
-            let random = arc4random() % UInt32(profilTemplates.count)
-            return profilTemplates[Int(random)]
-        }
-        
-        switch keyword {
-        case "Level":
-            let levelTemplates = [
-                "Here is the \(keywordValue) of \(user.username).",
+        if keyword.key == "Level" {
+            return FTResponseArray(responses: ["Here is the \(keyword.value) of \(user.username).",
                 "\(user.username) is actually at level \(user.level).",
-                "\(user.username) is at level \(user.level). Can be better...",
-            ]
-            let random = arc4random() % UInt32(levelTemplates.count)
-            return levelTemplates[Int(random)]
-        case "Wallet":
-            let walletTemplates = [
-                "\(user.username) have actually \(user.wallet) wallets.",
-                "\(user.username) have \(user.wallet) wallet. What a rich man !",
-            ]
-            let random = arc4random() % UInt32(walletTemplates.count)
-            return walletTemplates[Int(random)]
-        case "CorrectionPoints":
-            let correctionTemplates = [
-                "\(user.username) have actually \(user.correctionPoints) correction points.",
-                "\(user.username) have \(user.correctionPoints) correction points.",
-            ]
-            let random = arc4random() % UInt32(correctionTemplates.count)
-            return correctionTemplates[Int(random)]
-        default:
+                "\(user.username) is at level \(user.level). Can be better..."]).random()
+        }
+        else if keyword.key == "Wallet" {
+            return FTResponseArray(responses: ["\(user.username) have actually \(user.wallet) wallets.",
+                "\(user.username) have \(user.wallet) wallet. What a rich man !"]).random()
+        }
+        else if keyword.key == "CorrectionPoints" {
+            return FTResponseArray(responses: ["\(user.username) have actually \(user.correctionPoints) correction points.",
+                "\(user.username) have \(user.correctionPoints) correction points."]).random()
+        }
+        else {
             return "Here is the profil of \(user.username)."
         }
     }
     
     private func logResponse(username: String, location: String?) -> String {
-        if location != nil {
-            let availableTemplates = [
-                "\(username) is located in \(location!).",
-                "It looks like \(username) is in \(location!).",
-                "\(username) is currently in \(location!). Say him hello !",
-            ]
-            let random = arc4random() % UInt32(availableTemplates.count)
-            return availableTemplates[Int(random)]
+        guard location != nil else {
+            return FTResponseArray(responses: ["\(username) is not available.",
+                                                "\(username) is not at school.",
+                                                "\(username) is not here. Blackhole is comming..."]).random()
         }
-        else {
-            let unavailableTemplate = [
-                "\(username) is not available.",
-                "\(username) is not at school.",
-                "\(username) is not here. Blackhole is comming...",
-            ]
-            let random = arc4random() % UInt32(unavailableTemplate.count)
-            return unavailableTemplate[Int(random)]
-        }
+        return FTResponseArray(responses: ["\(username) is located in \(location!).",
+                                            "It looks like \(username) is in \(location!).",
+                                            "\(username) is currently in \(location!). Say him hello !"]).random()
     }
 }

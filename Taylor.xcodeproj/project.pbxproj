@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B365174184CDDFADDC15FA8 /* Pods_TaylorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */; };
 		3E415A24EB839C3AA9473B49 /* Pods_TaylorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B488187259975E76051DF3 /* Pods_TaylorTests.framework */; };
+		500F3FF32049A89800E5E520 /* FTResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF22049A89800E5E520 /* FTResponseArray.swift */; };
+		500F3FF52049ABE200E5E520 /* FTKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF42049ABE200E5E520 /* FTKeyword.swift */; };
 		50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4100020496E400098CDA1 /* AppDelegate.swift */; };
 		50F4101420496E400098CDA1 /* TaylorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101320496E400098CDA1 /* TaylorTests.swift */; };
 		50F4101F20496E400098CDA1 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101E20496E400098CDA1 /* TaylorUITests.swift */; };
@@ -54,6 +56,8 @@
 		08B488187259975E76051DF3 /* Pods_TaylorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4900C891EAFAB8561239DFD3 /* Pods-TaylorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorUITests/Pods-TaylorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		500F3FF22049A89800E5E520 /* FTResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTResponseArray.swift; sourceTree = "<group>"; };
+		500F3FF42049ABE200E5E520 /* FTKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTKeyword.swift; sourceTree = "<group>"; };
 		50F40FFD20496E400098CDA1 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4100020496E400098CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F4100920496E400098CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				50F41038204971160098CDA1 /* FTUser.swift */,
 				50F41034204971160098CDA1 /* FTProject.swift */,
 				50F41033204971160098CDA1 /* FTResponse.swift */,
+				500F3FF22049A89800E5E520 /* FTResponseArray.swift */,
+				500F3FF42049ABE200E5E520 /* FTKeyword.swift */,
 				50F41037204971160098CDA1 /* FTRequestHandler.swift */,
 				50F4103D204971170098CDA1 /* FTResponseManager.swift */,
 				50F41035204971160098CDA1 /* FTViewManager.swift */,
@@ -525,9 +531,11 @@
 				50F4104A204971170098CDA1 /* FTUser.swift in Sources */,
 				50F41046204971170098CDA1 /* FTProject.swift in Sources */,
 				50F41047204971170098CDA1 /* FTViewManager.swift in Sources */,
+				500F3FF52049ABE200E5E520 /* FTKeyword.swift in Sources */,
 				50F41049204971170098CDA1 /* FTRequestHandler.swift in Sources */,
 				50F41043204971170098CDA1 /* FTProfilView.swift in Sources */,
 				50F41042204971170098CDA1 /* FTMainViewController.swift in Sources */,
+				500F3FF32049A89800E5E520 /* FTResponseArray.swift in Sources */,
 				50F4103F204971170098CDA1 /* FTExampleView.swift in Sources */,
 				50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */,
 			);
