@@ -66,6 +66,13 @@ class FTResponseManager: NSObject {
                 ]
                 let random = arc4random() % UInt32(walletTemplates.count)
                 return walletTemplates[Int(random)]
+            case "CorrectionPoints":
+                let correctionTemplates = [
+                    "\(user.username) have actually \(user.correctionPoints) correction points.",
+                    "\(user.username) have \(user.correctionPoints) correction points.",
+                ]
+                let random = arc4random() % UInt32(correctionTemplates.count)
+                return correctionTemplates[Int(random)]
             default:
                 return "Here is the profil of \(user.username)."
             }
