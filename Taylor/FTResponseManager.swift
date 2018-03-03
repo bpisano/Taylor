@@ -38,37 +38,29 @@ class FTResponseManager: NSObject {
             
             let user = parameters["user"] as! FTUser
             let params = parameters["parameters"] as? [String: Any]
-            return FTResponse(response: profilResponse(user: user, parameters: params),
+            return FTResponse(response: projectResponse(user: user, parameters: params),
                               view: FTViewManager().profilView(user: user))
         default:
             return nil
         }
     }
-    /*
+    
     private func projectResponse (user: FTUser, parameters: [String: Any?]?) -> String? {
-        let keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User"])
+        var keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User"])
         
-        guard keywords.contains(keyword: "Project") else {
-            return "It seems that this project does not exist :/"
-        }
-        
-        guard let projectName = keywords.keyword(key: "Project") else {
+        guard let projectName = keywords.keyword(key: "Project")?.value, let project = user.project(name: projectName) else {
             return "It seems that \(user.username) does not have started this project"
         }
         
-        guard let keyword = keywrd, let keywordValue = keywrdValue else {
-            let profilTemplates = [
-                "Here is the profil of \(user.username).",
-                "Here it is. That's \(user.username) !",
-                "\(user.username)... Okay here it is. Big applause.",
-            ]
-            let random = arc4random() % UInt32(profilTemplates.count)
-            return profilTemplates[Int(random)]
+        keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User", "Project"])
+        
+        guard let keyword = keywords.first else {
+            return "Here is the \(projectName) of \(user.username)."
         }
         
-        switch keyword {
+        switch keyword.key {
         case "ProjectStatus":
-            if keywordValue == "start" {
+            if keyword.value == "start" {
                 if project.status == .inProgress {
                     return "It seems that \(user.username) started \(project.displayName)."
                 }
@@ -88,7 +80,7 @@ class FTResponseManager: NSObject {
         default:
             return "Here is the \(project.displayName) of \(user.username)."
         }
-    }*/
+    }
     
     private func profilResponse(user: FTUser, parameters: [String: Any?]?) -> String? {
         let keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User", "Profil"])
@@ -100,7 +92,7 @@ class FTResponseManager: NSObject {
         }
         
         if keyword.key == "Level" {
-            return FTResponseArray(responses: ["Here is the \(keyword.value) of \(user.username).",
+            return FTResponseArray(responses:["Here is the \(keyword.value) of \(user.username).",
                 "\(user.username) is actually at level \(user.level).",
                 "\(user.username) is at level \(user.level). Can be better..."]).random()
         }
