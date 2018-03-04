@@ -12,34 +12,23 @@ import ApiAI
 class FTResponseManager: NSObject {
     
     func response(intentName: String, parameters: [String: Any?]?) -> FTResponse? {
+        guard let parameters = parameters else {
+            return nil
+        }
+        
+        let user = parameters["user"] as! FTUser
+        let params = parameters["parameters"] as? [String: Any]
+        
         switch intentName {
         case "Log":
-            guard let parameters = parameters else {
-                return nil
-            }
-            
-            let username = parameters["username"] as! String
-            let location = parameters["location"] as! String?
-            return FTResponse(response: logResponse(username: username, location: location),
-                              view: FTViewManager().logView(username: username, location: location))
+            return FTResponse(response: logResponse(user: user),
+                              view: FTViewManager().logView(user: user))
         case "Profil":
-            guard let parameters = parameters else {
-                return nil
-            }
-            
-            let user = parameters["user"] as! FTUser
-            let params = parameters["parameters"] as? [String: Any]
             return FTResponse(response: profilResponse(user: user, parameters: params),
                               view: FTViewManager().profilView(user: user))
         case "Projects":
-            guard let parameters = parameters else {
-                return nil
-            }
-            
-            let user = parameters["user"] as! FTUser
-            let params = parameters["parameters"] as? [String: Any]
             return FTResponse(response: projectResponse(user: user, parameters: params),
-                              view: FTViewManager().profilView(user: user))
+                              view: FTViewManager().projectView(user: user, parameters: params))
         default:
             return nil
         }
@@ -109,14 +98,14 @@ class FTResponseManager: NSObject {
         }
     }
     
-    private func logResponse(username: String, location: String?) -> String {
-        guard location != nil else {
-            return FTResponseArray(responses: ["\(username) is not available.",
-                                                "\(username) is not at school.",
-                                                "\(username) is not here. Blackhole is comming..."]).random()
+    private func logResponse(user: FTUser) -> String {
+        guard let location = user.location else {
+            return FTResponseArray(responses: ["\(user.username) is not available.",
+                                                "\(user.username) is not at school.",
+                                                "\(user.username) is not here. Blackhole is comming..."]).random()
         }
-        return FTResponseArray(responses: ["\(username) is located in \(location!).",
-                                            "It looks like \(username) is in \(location!).",
-                                            "\(username) is currently in \(location!). Say him hello !"]).random()
+        return FTResponseArray(responses: ["\(user.username) is located in \(location).",
+                                            "It looks like \(user.username) is in \(location).",
+                                            "\(user.username) is currently in \(location). Say him hello !"]).random()
     }
 }

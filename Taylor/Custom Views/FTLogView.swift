@@ -17,4 +17,10 @@ class FTLogView: NSView {
     @IBOutlet weak var usernameLabel: NSTextField!
     @IBOutlet weak var locationLabel: NSTextField!
     @IBOutlet weak var logIndicator: FTLogIndicator!
+    
+    func configure(user: FTUser) {
+        usernameLabel.stringValue = user.username
+        locationLabel.stringValue = user.location ?? "Unavailable"
+        logIndicator.set(state: user.location == nil ? .unavailable : .available)
+    }
 }

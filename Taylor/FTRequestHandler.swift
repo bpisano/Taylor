@@ -32,7 +32,7 @@ class FTRequestHandler: NSObject {
             print("[ApiAI] Intent name : \(intentName!)")
             
             switch intentName! {
-            case "Log":
+            case "Log", "Profil", "Projects":
                 guard let username = parameters!["User"] as? AIResponseParameter else {
                     completion?(nil, nil)
                     return
@@ -44,51 +44,11 @@ class FTRequestHandler: NSObject {
                         return
                     }
                     
-                    guard user != nil && user?.username != "" else {
+                    guard user != nil else {
                         completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
                         return
                     }
                     
-                    let response = FTResponseManager().response(intentName: intentName!, parameters: ["username": username.stringValue, "location": user!.location])
-                    completion?(nil, response)
-                })
-            case "Profil":
-                guard let username = parameters!["User"] as? AIResponseParameter else {
-                    completion?(nil, nil)
-                    return
-                }
-                
-                FTApi().getUser(username.stringValue, { (error, user) in
-                    guard error == nil else {
-                        completion?(error! as NSError, nil)
-                        return
-                    }
-                    
-                    guard user != nil && user?.username != "" else {
-                        completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
-                        return
-                    }
-                    
-                    let response = FTResponseManager().response(intentName: intentName!, parameters: ["user": user, "parameters": parameters])
-                    completion?(nil, response)
-                })
-            case "Projects":
-                guard let username = parameters!["User"] as? AIResponseParameter else {
-                    completion?(nil, nil)
-                    return
-                }
-                
-                FTApi().getUser(username.stringValue, { (error, user) in
-                    guard error == nil else {
-                        completion?(error! as NSError, nil)
-                        return
-                    }
-                    
-                    guard user != nil && user?.username != "" else {
-                        completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
-                        return
-                    }
-
                     let response = FTResponseManager().response(intentName: intentName!, parameters: ["user": user, "parameters": parameters])
                     completion?(nil, response)
                 })

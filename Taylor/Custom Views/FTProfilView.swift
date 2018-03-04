@@ -25,4 +25,17 @@ class FTProfilView: NSView {
         staffLabel.layer?.cornerRadius = 2
         staffLabel.layer?.masksToBounds = true
     }
+    
+    func configure(user: FTUser) {
+        nameLabel.stringValue = "\(user.firstName) \(user.lastName)"
+        usernameLabel.stringValue = user.username
+        emailLabel.stringValue = user.email
+        levelLabel.stringValue = "Level \(user.level)"
+        levelIndicator.doubleValue = user.levelProgress * 1000
+        correctionPointLabel.stringValue = "\(user.correctionPoints)"
+        walletLabel.stringValue = "\(user.wallet)"
+        logIndicator.set(state: user.location == nil ? .unavailable : .available)
+        locationLabel.stringValue = user.location == nil ? "Unavailable" : "\(user.location!)"
+        staffLabel.isHidden = !user.isStaff
+    }
 }
