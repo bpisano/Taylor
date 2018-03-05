@@ -1,5 +1,5 @@
 //
-//  FTExampleView.swift
+//  TLExampleView.swift
 //  42IA
 //
 //  Created by Benjamin Pisano on 01/03/2018.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class FTExampleView: NSView {
+class TLExampleView: NSView {
     
     override func awakeFromNib() {
         changeExamples()

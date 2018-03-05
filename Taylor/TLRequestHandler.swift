@@ -1,5 +1,5 @@
 //
-//  FTRequestHandler.swift
+//  TLRequestHandler.swift
 //  42IA
 //
 //  Created by Benjamin Pisano on 28/02/2018.
@@ -9,9 +9,9 @@
 import Cocoa
 import ApiAI
 
-class FTRequestHandler: NSObject {
+class TLRequestHandler: NSObject {
     
-    func getAnswer(request: String, _ completion: ((_ error: NSError?, _ response: FTResponse?) -> Void)?) {
+    func getAnswer(request: String, _ completion: ((_ error: NSError?, _ response: TLResponse?) -> Void)?) {
         handleRequest(request: request) { (error, response) in
             guard error == nil else {
                 completion?(error, nil)
@@ -22,7 +22,7 @@ class FTRequestHandler: NSObject {
         }
     }
     
-    private func handleRequest(request: String, _ completion: ((_ error: NSError?, _ response: FTResponse?) -> Void)?) {
+    private func handleRequest(request: String, _ completion: ((_ error: NSError?, _ response: TLResponse?) -> Void)?) {
         getDataFor(request: request) { (error, intentName, parameters) in
             guard error == nil else {
                 completion?(error, nil)
@@ -45,15 +45,15 @@ class FTRequestHandler: NSObject {
                     }
                     
                     guard user != nil else {
-                        completion?(nil, FTResponse(response: "Maybe this user doesn't exist :/", view: nil))
+                        completion?(nil, TLResponse(response: "Maybe this user doesn't exist :/", view: nil))
                         return
                     }
                     
-                    let response = FTResponseManager().response(intentName: intentName!, parameters: ["user": user, "parameters": parameters])
+                    let response = TLResponseManager().response(intentName: intentName!, parameters: ["user": user, "parameters": parameters])
                     completion?(nil, response)
                 })
             default:
-                completion?(nil, FTResponse(response: "It looks like I was not able to understand a fuckin word 🤔", view: nil))
+                completion?(nil, TLResponse(response: "It looks like I was not able to understand a fuckin word 🤔", view: nil))
             }
         }
     }

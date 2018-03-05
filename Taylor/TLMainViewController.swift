@@ -1,5 +1,5 @@
 //
-//  FTMainViewController.swift
+//  TLMainViewController.swift
 //  42IA
 //
 //  Created by Benjamin Pisano on 28/02/2018.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class FTMainViewController: NSViewController {
+class TLMainViewController: NSViewController {
 
     @IBOutlet weak var containerView: NSView!
     @IBOutlet weak var responseLabel: NSTextField!
@@ -24,7 +24,7 @@ class FTMainViewController: NSViewController {
     
     override func viewDidAppear() {
         NSApplication.shared.activate(ignoringOtherApps: true)
-        addResponseView(FTViewManager().exampleView())
+        addResponseView(TLViewManager().exampleView())
     }
     
     @IBAction func quit(_ sender: Any) {
@@ -37,7 +37,7 @@ class FTMainViewController: NSViewController {
         }
         
         animateRequest()
-        FTRequestHandler().getAnswer(request: askTextField.stringValue) { (error, response) in
+        TLRequestHandler().getAnswer(request: askTextField.stringValue) { (error, response) in
             guard error == nil else {
                 self.showError("I'm sorry, an error occured :/")
                 print(error!.localizedDescription)
@@ -105,12 +105,12 @@ class FTMainViewController: NSViewController {
 }
 
 
-extension FTMainViewController {
-    static func newViewController() -> FTMainViewController {
+extension TLMainViewController {
+    static func newViewController() -> TLMainViewController {
         let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
-        let id = NSStoryboard.SceneIdentifier("FTMainViewController")
+        let id = NSStoryboard.SceneIdentifier("TLMainViewController")
         
-        guard let controller = storyboard.instantiateController(withIdentifier: id) as? FTMainViewController else {
+        guard let controller = storyboard.instantiateController(withIdentifier: id) as? TLMainViewController else {
             fatalError("No Controller found")
         }
         

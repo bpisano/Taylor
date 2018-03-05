@@ -1,5 +1,5 @@
 //
-//  FTKeyword.swift
+//  TLKeyword.swift
 //  Taylor
 //
 //  Created by Benjamin Pisano on 02/03/2018.
@@ -9,16 +9,16 @@
 import Cocoa
 import ApiAI
 
-struct FTKeyword {
+struct TLKeyword {
     var key: String
     var value: String
     
-    static func getKeywords(parameters: [String: Any?]?, exclude: [String]? = nil) -> [FTKeyword] {
+    static func getKeywords(parameters: [String: Any?]?, exclude: [String]? = nil) -> [TLKeyword] {
         guard parameters != nil else {
             return []
         }
         
-        var keywords = [FTKeyword]()
+        var keywords = [TLKeyword]()
         
         for parameter in parameters! {
             guard let keywordValue = (parameter.value as? AIResponseParameter)?.stringValue else {
@@ -32,7 +32,7 @@ struct FTKeyword {
                     }
                 }
                 
-                let keyword = FTKeyword(key: parameter.key, value: keywordValue)
+                let keyword = TLKeyword(key: parameter.key, value: keywordValue)
                 keywords.append(keyword)
             }
         }
@@ -40,7 +40,7 @@ struct FTKeyword {
     }
 }
 
-extension Array where Element == FTKeyword {
+extension Array where Element == TLKeyword {
     func contains(keyword: String) -> Bool {
         if contains(where: { (element) -> Bool in
             return element.key == keyword
@@ -50,7 +50,7 @@ extension Array where Element == FTKeyword {
         return false
     }
     
-    func keyword(key: String) -> FTKeyword? {
+    func keyword(key: String) -> TLKeyword? {
         for keyword in self {
             if keyword.key == key {
                 return keyword

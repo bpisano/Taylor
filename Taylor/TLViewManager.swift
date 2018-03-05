@@ -1,5 +1,5 @@
 //
-//  FTViewManager.swift
+//  TLViewManager.swift
 //  42IA
 //
 //  Created by Benjamin Pisano on 01/03/2018.
@@ -8,14 +8,14 @@
 
 import Cocoa
 
-class FTViewManager: NSObject {
+class TLViewManager: NSObject {
     
     func projectView(user: FTUser, parameters: [String: Any?]?) -> NSView? {
-        guard let projectView = NSView().named("FTProjectView") as? FTProjectView else {
+        guard let projectView = NSView().named("TLProjectView") as? TLProjectView else {
             return nil
         }
         
-        let keywords = FTKeyword.getKeywords(parameters: parameters, exclude: ["User"])
+        let keywords = TLKeyword.getKeywords(parameters: parameters, exclude: ["User"])
         
         guard let projectName = keywords.keyword(key: "Project")?.value else {
             return nil
@@ -26,7 +26,7 @@ class FTViewManager: NSObject {
     }
     
     func profilView(user: FTUser) -> NSView? {
-        guard let profilView = NSView().named("FTProfilView") as? FTProfilView else {
+        guard let profilView = NSView().named("TLProfilView") as? TLProfilView else {
             return nil
         }
         
@@ -35,7 +35,7 @@ class FTViewManager: NSObject {
     }
     
     func logView(user: FTUser) -> NSView? {
-        guard let logView = NSView().named("FTLogView") as? FTLogView else {
+        guard let logView = NSView().named("TLLogView") as? TLLogView else {
             return nil
         }
         
@@ -44,7 +44,7 @@ class FTViewManager: NSObject {
     }
     
     func exampleView() -> NSView? {
-        guard let exampleView = NSView().named("FTExampleView") as? FTExampleView else {
+        guard let exampleView = NSView().named("TLExampleView") as? TLExampleView else {
             return nil
         }
         

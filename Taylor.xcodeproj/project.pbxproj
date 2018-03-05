@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B365174184CDDFADDC15FA8 /* Pods_TaylorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */; };
 		3E415A24EB839C3AA9473B49 /* Pods_TaylorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B488187259975E76051DF3 /* Pods_TaylorTests.framework */; };
-		500F3FF32049A89800E5E520 /* FTResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF22049A89800E5E520 /* FTResponseArray.swift */; };
-		500F3FF52049ABE200E5E520 /* FTKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF42049ABE200E5E520 /* FTKeyword.swift */; };
+		500F3FF32049A89800E5E520 /* TLResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF22049A89800E5E520 /* TLResponseArray.swift */; };
+		500F3FF52049ABE200E5E520 /* TLKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF42049ABE200E5E520 /* TLKeyword.swift */; };
 		503442BD204D98B4006733D2 /* TLAutoCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442BC204D98B4006733D2 /* TLAutoCompletion.swift */; };
 		503442BF204D98CF006733D2 /* TLCompletionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442BE204D98CF006733D2 /* TLCompletionTextField.swift */; };
 		503442C1204D9951006733D2 /* TLSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442C0204D9951006733D2 /* TLSuggestionView.swift */; };
@@ -20,28 +20,28 @@
 		503442C9204D9B00006733D2 /* users.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442C8204D9B00006733D2 /* users.txt */; };
 		503442CC204D9C06006733D2 /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442CB204D9C06006733D2 /* commands.txt */; };
 		503442CE204D9ED0006733D2 /* projects.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442CD204D9ED0006733D2 /* projects.txt */; };
-		50BCC66E204C82DD0097D775 /* FTProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BCC66D204C82DD0097D775 /* FTProjectView.xib */; };
-		50BCC670204C82EA0097D775 /* FTProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCC66F204C82EA0097D775 /* FTProjectView.swift */; };
+		50BCC66E204C82DD0097D775 /* TLProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BCC66D204C82DD0097D775 /* TLProjectView.xib */; };
+		50BCC670204C82EA0097D775 /* TLProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCC66F204C82EA0097D775 /* TLProjectView.swift */; };
 		50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4100020496E400098CDA1 /* AppDelegate.swift */; };
 		50F4101420496E400098CDA1 /* TaylorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101320496E400098CDA1 /* TaylorTests.swift */; };
 		50F4101F20496E400098CDA1 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101E20496E400098CDA1 /* TaylorUITests.swift */; };
-		50F4103E204971170098CDA1 /* FTLogIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102C204971150098CDA1 /* FTLogIndicator.swift */; };
-		50F4103F204971170098CDA1 /* FTExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102D204971150098CDA1 /* FTExampleView.swift */; };
-		50F41040204971170098CDA1 /* FTLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102E204971150098CDA1 /* FTLogView.swift */; };
-		50F41041204971170098CDA1 /* FTLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4102F204971150098CDA1 /* FTLogView.xib */; };
-		50F41042204971170098CDA1 /* FTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41030204971150098CDA1 /* FTMainViewController.swift */; };
-		50F41043204971170098CDA1 /* FTProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41031204971150098CDA1 /* FTProfilView.swift */; };
-		50F41044204971170098CDA1 /* FTExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F41032204971160098CDA1 /* FTExampleView.xib */; };
-		50F41045204971170098CDA1 /* FTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41033204971160098CDA1 /* FTResponse.swift */; };
+		50F4103E204971170098CDA1 /* TLLogIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102C204971150098CDA1 /* TLLogIndicator.swift */; };
+		50F4103F204971170098CDA1 /* TLExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102D204971150098CDA1 /* TLExampleView.swift */; };
+		50F41040204971170098CDA1 /* TLLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4102E204971150098CDA1 /* TLLogView.swift */; };
+		50F41041204971170098CDA1 /* TLLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4102F204971150098CDA1 /* TLLogView.xib */; };
+		50F41042204971170098CDA1 /* TLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41030204971150098CDA1 /* TLMainViewController.swift */; };
+		50F41043204971170098CDA1 /* TLProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41031204971150098CDA1 /* TLProfilView.swift */; };
+		50F41044204971170098CDA1 /* TLExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F41032204971160098CDA1 /* TLExampleView.xib */; };
+		50F41045204971170098CDA1 /* TLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41033204971160098CDA1 /* TLResponse.swift */; };
 		50F41046204971170098CDA1 /* FTProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41034204971160098CDA1 /* FTProject.swift */; };
-		50F41047204971170098CDA1 /* FTViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41035204971160098CDA1 /* FTViewManager.swift */; };
+		50F41047204971170098CDA1 /* TLViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41035204971160098CDA1 /* TLViewManager.swift */; };
 		50F41048204971170098CDA1 /* FTApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41036204971160098CDA1 /* FTApi.swift */; };
-		50F41049204971170098CDA1 /* FTRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41037204971160098CDA1 /* FTRequestHandler.swift */; };
+		50F41049204971170098CDA1 /* TLRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41037204971160098CDA1 /* TLRequestHandler.swift */; };
 		50F4104A204971170098CDA1 /* FTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F41038204971160098CDA1 /* FTUser.swift */; };
 		50F4104C204971170098CDA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F4103A204971160098CDA1 /* Assets.xcassets */; };
-		50F4104D204971170098CDA1 /* FTEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4103B204971170098CDA1 /* FTEventMonitor.swift */; };
-		50F4104E204971170098CDA1 /* FTProfilView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4103C204971170098CDA1 /* FTProfilView.xib */; };
-		50F4104F204971170098CDA1 /* FTResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4103D204971170098CDA1 /* FTResponseManager.swift */; };
+		50F4104D204971170098CDA1 /* TLEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4103B204971170098CDA1 /* TLEventMonitor.swift */; };
+		50F4104E204971170098CDA1 /* TLProfilView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F4103C204971170098CDA1 /* TLProfilView.xib */; };
+		50F4104F204971170098CDA1 /* TLResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4103D204971170098CDA1 /* TLResponseManager.swift */; };
 		50F410522049712C0098CDA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F410502049712C0098CDA1 /* Main.storyboard */; };
 		FDC0D8A6AEB92731FCE3DD51 /* Pods_Taylor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C313599F0BA40A4F82003A71 /* Pods_Taylor.framework */; };
 /* End PBXBuildFile section */
@@ -67,8 +67,8 @@
 		08B488187259975E76051DF3 /* Pods_TaylorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BDDAC667803CA0A8A23ECE /* Pods_TaylorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4900C891EAFAB8561239DFD3 /* Pods-TaylorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorUITests/Pods-TaylorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		500F3FF22049A89800E5E520 /* FTResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTResponseArray.swift; sourceTree = "<group>"; };
-		500F3FF42049ABE200E5E520 /* FTKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTKeyword.swift; sourceTree = "<group>"; };
+		500F3FF22049A89800E5E520 /* TLResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLResponseArray.swift; sourceTree = "<group>"; };
+		500F3FF42049ABE200E5E520 /* TLKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLKeyword.swift; sourceTree = "<group>"; };
 		503442BC204D98B4006733D2 /* TLAutoCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLAutoCompletion.swift; sourceTree = "<group>"; };
 		503442BE204D98CF006733D2 /* TLCompletionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLCompletionTextField.swift; sourceTree = "<group>"; };
 		503442C0204D9951006733D2 /* TLSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSuggestionView.swift; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		503442C8204D9B00006733D2 /* users.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = users.txt; sourceTree = "<group>"; };
 		503442CB204D9C06006733D2 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
 		503442CD204D9ED0006733D2 /* projects.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = projects.txt; sourceTree = "<group>"; };
-		50BCC66D204C82DD0097D775 /* FTProjectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTProjectView.xib; sourceTree = "<group>"; };
-		50BCC66F204C82EA0097D775 /* FTProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTProjectView.swift; sourceTree = "<group>"; };
+		50BCC66D204C82DD0097D775 /* TLProjectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TLProjectView.xib; sourceTree = "<group>"; };
+		50BCC66F204C82EA0097D775 /* TLProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLProjectView.swift; sourceTree = "<group>"; };
 		50F40FFD20496E400098CDA1 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4100020496E400098CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F4100920496E400098CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,23 +90,23 @@
 		50F4101A20496E400098CDA1 /* TaylorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaylorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4101E20496E400098CDA1 /* TaylorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaylorUITests.swift; sourceTree = "<group>"; };
 		50F4102020496E400098CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50F4102C204971150098CDA1 /* FTLogIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTLogIndicator.swift; sourceTree = "<group>"; };
-		50F4102D204971150098CDA1 /* FTExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTExampleView.swift; sourceTree = "<group>"; };
-		50F4102E204971150098CDA1 /* FTLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTLogView.swift; sourceTree = "<group>"; };
-		50F4102F204971150098CDA1 /* FTLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTLogView.xib; sourceTree = "<group>"; };
-		50F41030204971150098CDA1 /* FTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTMainViewController.swift; sourceTree = "<group>"; };
-		50F41031204971150098CDA1 /* FTProfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTProfilView.swift; sourceTree = "<group>"; };
-		50F41032204971160098CDA1 /* FTExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTExampleView.xib; sourceTree = "<group>"; };
-		50F41033204971160098CDA1 /* FTResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTResponse.swift; sourceTree = "<group>"; };
+		50F4102C204971150098CDA1 /* TLLogIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLLogIndicator.swift; sourceTree = "<group>"; };
+		50F4102D204971150098CDA1 /* TLExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLExampleView.swift; sourceTree = "<group>"; };
+		50F4102E204971150098CDA1 /* TLLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLLogView.swift; sourceTree = "<group>"; };
+		50F4102F204971150098CDA1 /* TLLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLLogView.xib; sourceTree = "<group>"; };
+		50F41030204971150098CDA1 /* TLMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLMainViewController.swift; sourceTree = "<group>"; };
+		50F41031204971150098CDA1 /* TLProfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLProfilView.swift; sourceTree = "<group>"; };
+		50F41032204971160098CDA1 /* TLExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLExampleView.xib; sourceTree = "<group>"; };
+		50F41033204971160098CDA1 /* TLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLResponse.swift; sourceTree = "<group>"; };
 		50F41034204971160098CDA1 /* FTProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTProject.swift; sourceTree = "<group>"; };
-		50F41035204971160098CDA1 /* FTViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTViewManager.swift; sourceTree = "<group>"; };
+		50F41035204971160098CDA1 /* TLViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLViewManager.swift; sourceTree = "<group>"; };
 		50F41036204971160098CDA1 /* FTApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTApi.swift; sourceTree = "<group>"; };
-		50F41037204971160098CDA1 /* FTRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTRequestHandler.swift; sourceTree = "<group>"; };
+		50F41037204971160098CDA1 /* TLRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLRequestHandler.swift; sourceTree = "<group>"; };
 		50F41038204971160098CDA1 /* FTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTUser.swift; sourceTree = "<group>"; };
 		50F4103A204971160098CDA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../42IA/42IA/Assets.xcassets; sourceTree = "<group>"; };
-		50F4103B204971170098CDA1 /* FTEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTEventMonitor.swift; sourceTree = "<group>"; };
-		50F4103C204971170098CDA1 /* FTProfilView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTProfilView.xib; sourceTree = "<group>"; };
-		50F4103D204971170098CDA1 /* FTResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTResponseManager.swift; sourceTree = "<group>"; };
+		50F4103B204971170098CDA1 /* TLEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLEventMonitor.swift; sourceTree = "<group>"; };
+		50F4103C204971170098CDA1 /* TLProfilView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLProfilView.xib; sourceTree = "<group>"; };
+		50F4103D204971170098CDA1 /* TLResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLResponseManager.swift; sourceTree = "<group>"; };
 		50F410512049712C0098CDA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../42IA/42IA/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E87D9AFBFC9E11D66C1D6EF /* Pods-TaylorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorTests/Pods-TaylorTests.release.xcconfig"; sourceTree = "<group>"; };
 		8273192CA91868A947A1A970 /* Pods-TaylorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaylorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaylorTests/Pods-TaylorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,14 +198,14 @@
 				50F4100020496E400098CDA1 /* AppDelegate.swift */,
 				503442CA204D9B59006733D2 /* FTApi */,
 				503442BB204D9896006733D2 /* Autocompletion */,
-				50F4103B204971170098CDA1 /* FTEventMonitor.swift */,
-				50F41033204971160098CDA1 /* FTResponse.swift */,
-				500F3FF22049A89800E5E520 /* FTResponseArray.swift */,
-				500F3FF42049ABE200E5E520 /* FTKeyword.swift */,
-				50F41037204971160098CDA1 /* FTRequestHandler.swift */,
-				50F4103D204971170098CDA1 /* FTResponseManager.swift */,
-				50F41035204971160098CDA1 /* FTViewManager.swift */,
-				50F41030204971150098CDA1 /* FTMainViewController.swift */,
+				50F4103B204971170098CDA1 /* TLEventMonitor.swift */,
+				50F41033204971160098CDA1 /* TLResponse.swift */,
+				500F3FF22049A89800E5E520 /* TLResponseArray.swift */,
+				500F3FF42049ABE200E5E520 /* TLKeyword.swift */,
+				50F41037204971160098CDA1 /* TLRequestHandler.swift */,
+				50F4103D204971170098CDA1 /* TLResponseManager.swift */,
+				50F41035204971160098CDA1 /* TLViewManager.swift */,
+				50F41030204971150098CDA1 /* TLMainViewController.swift */,
 				50F410502049712C0098CDA1 /* Main.storyboard */,
 				50F41053204971D80098CDA1 /* Custom Views */,
 				50F4103A204971160098CDA1 /* Assets.xcassets */,
@@ -236,15 +236,15 @@
 		50F41053204971D80098CDA1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				50F4102C204971150098CDA1 /* FTLogIndicator.swift */,
-				50F4102D204971150098CDA1 /* FTExampleView.swift */,
-				50F41032204971160098CDA1 /* FTExampleView.xib */,
-				50F4102E204971150098CDA1 /* FTLogView.swift */,
-				50F4102F204971150098CDA1 /* FTLogView.xib */,
-				50F41031204971150098CDA1 /* FTProfilView.swift */,
-				50F4103C204971170098CDA1 /* FTProfilView.xib */,
-				50BCC66F204C82EA0097D775 /* FTProjectView.swift */,
-				50BCC66D204C82DD0097D775 /* FTProjectView.xib */,
+				50F4102C204971150098CDA1 /* TLLogIndicator.swift */,
+				50F4102D204971150098CDA1 /* TLExampleView.swift */,
+				50F41032204971160098CDA1 /* TLExampleView.xib */,
+				50F4102E204971150098CDA1 /* TLLogView.swift */,
+				50F4102F204971150098CDA1 /* TLLogView.xib */,
+				50F41031204971150098CDA1 /* TLProfilView.swift */,
+				50F4103C204971170098CDA1 /* TLProfilView.xib */,
+				50BCC66F204C82EA0097D775 /* TLProjectView.swift */,
+				50BCC66D204C82DD0097D775 /* TLProjectView.xib */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -390,15 +390,15 @@
 			files = (
 				503442CC204D9C06006733D2 /* commands.txt in Resources */,
 				50F410522049712C0098CDA1 /* Main.storyboard in Resources */,
-				50F4104E204971170098CDA1 /* FTProfilView.xib in Resources */,
+				50F4104E204971170098CDA1 /* TLProfilView.xib in Resources */,
 				503442C5204D9971006733D2 /* TLSuggestionView.xib in Resources */,
-				50BCC66E204C82DD0097D775 /* FTProjectView.xib in Resources */,
-				50F41041204971170098CDA1 /* FTLogView.xib in Resources */,
+				50BCC66E204C82DD0097D775 /* TLProjectView.xib in Resources */,
+				50F41041204971170098CDA1 /* TLLogView.xib in Resources */,
 				503442C7204D997D006733D2 /* TLSuggestionCell.xib in Resources */,
 				503442C9204D9B00006733D2 /* users.txt in Resources */,
 				50F4104C204971170098CDA1 /* Assets.xcassets in Resources */,
 				503442CE204D9ED0006733D2 /* projects.txt in Resources */,
-				50F41044204971170098CDA1 /* FTExampleView.xib in Resources */,
+				50F41044204971170098CDA1 /* TLExampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,25 +577,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F4103E204971170098CDA1 /* FTLogIndicator.swift in Sources */,
-				50F41040204971170098CDA1 /* FTLogView.swift in Sources */,
+				50F4103E204971170098CDA1 /* TLLogIndicator.swift in Sources */,
+				50F41040204971170098CDA1 /* TLLogView.swift in Sources */,
 				503442BD204D98B4006733D2 /* TLAutoCompletion.swift in Sources */,
 				50F41048204971170098CDA1 /* FTApi.swift in Sources */,
-				50F4104D204971170098CDA1 /* FTEventMonitor.swift in Sources */,
-				50F4104F204971170098CDA1 /* FTResponseManager.swift in Sources */,
-				50F41045204971170098CDA1 /* FTResponse.swift in Sources */,
+				50F4104D204971170098CDA1 /* TLEventMonitor.swift in Sources */,
+				50F4104F204971170098CDA1 /* TLResponseManager.swift in Sources */,
+				50F41045204971170098CDA1 /* TLResponse.swift in Sources */,
 				50F4104A204971170098CDA1 /* FTUser.swift in Sources */,
 				50F41046204971170098CDA1 /* FTProject.swift in Sources */,
-				50F41047204971170098CDA1 /* FTViewManager.swift in Sources */,
-				50BCC670204C82EA0097D775 /* FTProjectView.swift in Sources */,
-				500F3FF52049ABE200E5E520 /* FTKeyword.swift in Sources */,
+				50F41047204971170098CDA1 /* TLViewManager.swift in Sources */,
+				50BCC670204C82EA0097D775 /* TLProjectView.swift in Sources */,
+				500F3FF52049ABE200E5E520 /* TLKeyword.swift in Sources */,
 				503442C1204D9951006733D2 /* TLSuggestionView.swift in Sources */,
-				50F41049204971170098CDA1 /* FTRequestHandler.swift in Sources */,
-				50F41043204971170098CDA1 /* FTProfilView.swift in Sources */,
-				50F41042204971170098CDA1 /* FTMainViewController.swift in Sources */,
+				50F41049204971170098CDA1 /* TLRequestHandler.swift in Sources */,
+				50F41043204971170098CDA1 /* TLProfilView.swift in Sources */,
+				50F41042204971170098CDA1 /* TLMainViewController.swift in Sources */,
 				503442BF204D98CF006733D2 /* TLCompletionTextField.swift in Sources */,
-				500F3FF32049A89800E5E520 /* FTResponseArray.swift in Sources */,
-				50F4103F204971170098CDA1 /* FTExampleView.swift in Sources */,
+				500F3FF32049A89800E5E520 /* TLResponseArray.swift in Sources */,
+				50F4103F204971170098CDA1 /* TLExampleView.swift in Sources */,
 				503442C3204D995D006733D2 /* TLSuggestionCell.swift in Sources */,
 				50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */,
 			);

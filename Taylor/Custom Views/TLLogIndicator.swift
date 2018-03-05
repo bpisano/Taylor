@@ -1,5 +1,5 @@
 //
-//  FTLogIndicator.swift
+//  TLLogIndicator.swift
 //  42IA
 //
 //  Created by Benjamin Pisano on 01/03/2018.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class FTLogIndicator: NSView {
+class TLLogIndicator: NSView {
 
     override func awakeFromNib() {
         wantsLayer = true

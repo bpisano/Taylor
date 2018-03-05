@@ -14,10 +14,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
     let popover = NSPopover()
-    var eventMonitor: EventMonitor?
+    var eventMonitor: TLEventMonitor?
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
+        eventMonitor = TLEventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
             if let strongSelf = self, strongSelf.popover.isShown {
                 strongSelf.showUI()
             }
@@ -58,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             eventMonitor?.stop()
         }
         else {
-            popover.contentViewController = FTMainViewController.newViewController()
+            popover.contentViewController = TLMainViewController.newViewController()
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
             eventMonitor?.start()
         }

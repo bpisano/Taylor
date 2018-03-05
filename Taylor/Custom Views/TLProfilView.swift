@@ -1,5 +1,5 @@
 //
-//  FTProfilView.swift
+//  TLProfilView.swift
 //  42IA
 //
 //  Created by Benjamin Pisano on 01/03/2018.
@@ -8,12 +8,12 @@
 
 import Cocoa
 
-class FTProfilView: NSView {
+class TLProfilView: NSView {
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var usernameLabel: NSTextField!
     @IBOutlet weak var emailLabel: NSTextField!
     @IBOutlet weak var staffLabel: NSTextField!
-    @IBOutlet weak var logIndicator: FTLogIndicator!
+    @IBOutlet weak var logIndicator: TLLogIndicator!
     @IBOutlet weak var levelLabel: NSTextField!
     @IBOutlet weak var levelIndicator: NSProgressIndicator!
     @IBOutlet weak var correctionPointLabel: NSTextField!

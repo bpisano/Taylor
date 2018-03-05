@@ -1,5 +1,5 @@
 //
-//  FTProjectView.swift
+//  TLProjectView.swift
 //  Taylor
 //
 //  Created by Benjamin Pisano on 04/03/2018.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class FTProjectView: NSView {
+class TLProjectView: NSView {
 
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var usernameLabel: NSTextField!

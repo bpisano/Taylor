@@ -34,6 +34,7 @@ class TLSuggestionView: NSView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.wantsLayer = true
+        tableView.layer?.backgroundColor = NSColor.white.cgColor
         tableView.backgroundColor = NSColor.white
         tableView.enclosingScrollView?.wantsLayer = true
         tableView.enclosingScrollView?.layer?.backgroundColor = NSColor.white.cgColor

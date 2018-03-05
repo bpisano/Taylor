@@ -1,5 +1,5 @@
 //
-//  FTRandomSentence.swift
+//  TLResponseArray.swift
 //  Taylor
 //
 //  Created by Benjamin Pisano on 02/03/2018.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-struct FTResponseArray {
+struct TLResponseArray {
     var responses: [String]
     
     func random() -> String {
