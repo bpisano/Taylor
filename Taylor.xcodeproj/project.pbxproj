@@ -13,6 +13,13 @@
 		500F3FF52049ABE200E5E520 /* FTKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F3FF42049ABE200E5E520 /* FTKeyword.swift */; };
 		503442BD204D98B4006733D2 /* TLAutoCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442BC204D98B4006733D2 /* TLAutoCompletion.swift */; };
 		503442BF204D98CF006733D2 /* TLCompletionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442BE204D98CF006733D2 /* TLCompletionTextField.swift */; };
+		503442C1204D9951006733D2 /* TLSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442C0204D9951006733D2 /* TLSuggestionView.swift */; };
+		503442C3204D995D006733D2 /* TLSuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503442C2204D995D006733D2 /* TLSuggestionCell.swift */; };
+		503442C5204D9971006733D2 /* TLSuggestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503442C4204D9971006733D2 /* TLSuggestionView.xib */; };
+		503442C7204D997D006733D2 /* TLSuggestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503442C6204D997D006733D2 /* TLSuggestionCell.xib */; };
+		503442C9204D9B00006733D2 /* users.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442C8204D9B00006733D2 /* users.txt */; };
+		503442CC204D9C06006733D2 /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442CB204D9C06006733D2 /* commands.txt */; };
+		503442CE204D9ED0006733D2 /* projects.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442CD204D9ED0006733D2 /* projects.txt */; };
 		50BCC66E204C82DD0097D775 /* FTProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BCC66D204C82DD0097D775 /* FTProjectView.xib */; };
 		50BCC670204C82EA0097D775 /* FTProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCC66F204C82EA0097D775 /* FTProjectView.swift */; };
 		50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4100020496E400098CDA1 /* AppDelegate.swift */; };
@@ -64,6 +71,13 @@
 		500F3FF42049ABE200E5E520 /* FTKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTKeyword.swift; sourceTree = "<group>"; };
 		503442BC204D98B4006733D2 /* TLAutoCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLAutoCompletion.swift; sourceTree = "<group>"; };
 		503442BE204D98CF006733D2 /* TLCompletionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLCompletionTextField.swift; sourceTree = "<group>"; };
+		503442C0204D9951006733D2 /* TLSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSuggestionView.swift; sourceTree = "<group>"; };
+		503442C2204D995D006733D2 /* TLSuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSuggestionCell.swift; sourceTree = "<group>"; };
+		503442C4204D9971006733D2 /* TLSuggestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TLSuggestionView.xib; sourceTree = "<group>"; };
+		503442C6204D997D006733D2 /* TLSuggestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TLSuggestionCell.xib; sourceTree = "<group>"; };
+		503442C8204D9B00006733D2 /* users.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = users.txt; sourceTree = "<group>"; };
+		503442CB204D9C06006733D2 /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; };
+		503442CD204D9ED0006733D2 /* projects.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = projects.txt; sourceTree = "<group>"; };
 		50BCC66D204C82DD0097D775 /* FTProjectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTProjectView.xib; sourceTree = "<group>"; };
 		50BCC66F204C82EA0097D775 /* FTProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTProjectView.swift; sourceTree = "<group>"; };
 		50F40FFD20496E400098CDA1 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +149,22 @@
 			children = (
 				503442BC204D98B4006733D2 /* TLAutoCompletion.swift */,
 				503442BE204D98CF006733D2 /* TLCompletionTextField.swift */,
+				503442C0204D9951006733D2 /* TLSuggestionView.swift */,
+				503442C2204D995D006733D2 /* TLSuggestionCell.swift */,
+				503442C4204D9971006733D2 /* TLSuggestionView.xib */,
+				503442C6204D997D006733D2 /* TLSuggestionCell.xib */,
 			);
 			path = Autocompletion;
+			sourceTree = "<group>";
+		};
+		503442CA204D9B59006733D2 /* FTApi */ = {
+			isa = PBXGroup;
+			children = (
+				50F41036204971160098CDA1 /* FTApi.swift */,
+				50F41038204971160098CDA1 /* FTUser.swift */,
+				50F41034204971160098CDA1 /* FTProject.swift */,
+			);
+			path = FTApi;
 			sourceTree = "<group>";
 		};
 		50F40FF420496E400098CDA1 = {
@@ -164,12 +192,13 @@
 		50F40FFF20496E400098CDA1 /* Taylor */ = {
 			isa = PBXGroup;
 			children = (
+				503442C8204D9B00006733D2 /* users.txt */,
+				503442CB204D9C06006733D2 /* commands.txt */,
+				503442CD204D9ED0006733D2 /* projects.txt */,
 				50F4100020496E400098CDA1 /* AppDelegate.swift */,
+				503442CA204D9B59006733D2 /* FTApi */,
 				503442BB204D9896006733D2 /* Autocompletion */,
 				50F4103B204971170098CDA1 /* FTEventMonitor.swift */,
-				50F41036204971160098CDA1 /* FTApi.swift */,
-				50F41038204971160098CDA1 /* FTUser.swift */,
-				50F41034204971160098CDA1 /* FTProject.swift */,
 				50F41033204971160098CDA1 /* FTResponse.swift */,
 				500F3FF22049A89800E5E520 /* FTResponseArray.swift */,
 				500F3FF42049ABE200E5E520 /* FTKeyword.swift */,
@@ -359,11 +388,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503442CC204D9C06006733D2 /* commands.txt in Resources */,
 				50F410522049712C0098CDA1 /* Main.storyboard in Resources */,
 				50F4104E204971170098CDA1 /* FTProfilView.xib in Resources */,
+				503442C5204D9971006733D2 /* TLSuggestionView.xib in Resources */,
 				50BCC66E204C82DD0097D775 /* FTProjectView.xib in Resources */,
 				50F41041204971170098CDA1 /* FTLogView.xib in Resources */,
+				503442C7204D997D006733D2 /* TLSuggestionCell.xib in Resources */,
+				503442C9204D9B00006733D2 /* users.txt in Resources */,
 				50F4104C204971170098CDA1 /* Assets.xcassets in Resources */,
+				503442CE204D9ED0006733D2 /* projects.txt in Resources */,
 				50F41044204971170098CDA1 /* FTExampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,12 +589,14 @@
 				50F41047204971170098CDA1 /* FTViewManager.swift in Sources */,
 				50BCC670204C82EA0097D775 /* FTProjectView.swift in Sources */,
 				500F3FF52049ABE200E5E520 /* FTKeyword.swift in Sources */,
+				503442C1204D9951006733D2 /* TLSuggestionView.swift in Sources */,
 				50F41049204971170098CDA1 /* FTRequestHandler.swift in Sources */,
 				50F41043204971170098CDA1 /* FTProfilView.swift in Sources */,
 				50F41042204971170098CDA1 /* FTMainViewController.swift in Sources */,
 				503442BF204D98CF006733D2 /* TLCompletionTextField.swift in Sources */,
 				500F3FF32049A89800E5E520 /* FTResponseArray.swift in Sources */,
 				50F4103F204971170098CDA1 /* FTExampleView.swift in Sources */,
+				503442C3204D995D006733D2 /* TLSuggestionCell.swift in Sources */,
 				50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

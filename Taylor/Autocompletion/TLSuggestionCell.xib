@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="oSJ-4h-IqN" customClass="TLSuggestionCell" customModule="Taylor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j61-gL-zbu">
+                    <rect key="frame" x="6" y="4" width="315" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Suggestion" id="8sW-EH-ev0">
+                        <font key="font" metaFont="systemMedium" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="j61-gL-zbu" secondAttribute="bottom" constant="4" id="LMO-kZ-TTG"/>
+                <constraint firstItem="j61-gL-zbu" firstAttribute="leading" secondItem="oSJ-4h-IqN" secondAttribute="leading" constant="8" id="m1p-aX-ufq"/>
+                <constraint firstAttribute="trailing" secondItem="j61-gL-zbu" secondAttribute="trailing" constant="8" id="reP-Co-Xbc"/>
+                <constraint firstItem="j61-gL-zbu" firstAttribute="top" secondItem="oSJ-4h-IqN" secondAttribute="top" constant="4" id="yTY-Lh-fAq"/>
+            </constraints>
+            <connections>
+                <outlet property="textLabel" destination="j61-gL-zbu" id="icE-E2-4PL"/>
+            </connections>
+            <point key="canvasLocation" x="54.5" y="69"/>
+        </customView>
+    </objects>
+</document>
