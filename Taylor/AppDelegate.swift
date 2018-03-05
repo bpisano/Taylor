@@ -65,3 +65,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
+extension NSView {
+    func named(_ name: String) -> NSView? {
+        var topLevelObjects: NSArray?
+        guard Bundle.main.loadNibNamed(NSNib.Name(name), owner: self, topLevelObjects: &topLevelObjects) else {
+            return nil
+        }
+        
+        return topLevelObjects!.first(where: { $0 is NSView }) as? NSView
+    }
+}
+

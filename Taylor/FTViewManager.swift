@@ -11,7 +11,7 @@ import Cocoa
 class FTViewManager: NSObject {
     
     func projectView(user: FTUser, parameters: [String: Any?]?) -> NSView? {
-        guard let projectView = view(named: "FTProjectView") as? FTProjectView else {
+        guard let projectView = NSView().named("FTProjectView") as? FTProjectView else {
             return nil
         }
         
@@ -26,7 +26,7 @@ class FTViewManager: NSObject {
     }
     
     func profilView(user: FTUser) -> NSView? {
-        guard let profilView = view(named: "FTProfilView") as? FTProfilView else {
+        guard let profilView = NSView().named("FTProfilView") as? FTProfilView else {
             return nil
         }
         
@@ -35,7 +35,7 @@ class FTViewManager: NSObject {
     }
     
     func logView(user: FTUser) -> NSView? {
-        guard let logView = view(named: "FTLogView") as? FTLogView else {
+        guard let logView = NSView().named("FTLogView") as? FTLogView else {
             return nil
         }
         
@@ -44,19 +44,10 @@ class FTViewManager: NSObject {
     }
     
     func exampleView() -> NSView? {
-        guard let exampleView = view(named: "FTExampleView") as? FTExampleView else {
+        guard let exampleView = NSView().named("FTExampleView") as? FTExampleView else {
             return nil
         }
         
         return exampleView
-    }
-    
-    private func view(named name: String) -> NSView? {
-        var topLevelObjects: NSArray?
-        guard Bundle.main.loadNibNamed(NSNib.Name(name), owner: self, topLevelObjects: &topLevelObjects) else {
-            return nil
-        }
-        
-        return topLevelObjects!.first(where: { $0 is NSView }) as? NSView
     }
 }
