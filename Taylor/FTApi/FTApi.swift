@@ -33,6 +33,7 @@ class FTApi: NSObject {
                 print(error.localizedDescription)
                 completion?(error, nil)
             case .success(let value):
+                print(JSON(value))
                 let token = JSON(value)["access_token"].stringValue
                 
                 print("[42API] Token : \(token)")

@@ -22,6 +22,7 @@
 		503442CE204D9ED0006733D2 /* projects.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503442CD204D9ED0006733D2 /* projects.txt */; };
 		50BCC66E204C82DD0097D775 /* TLProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BCC66D204C82DD0097D775 /* TLProjectView.xib */; };
 		50BCC670204C82EA0097D775 /* TLProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCC66F204C82EA0097D775 /* TLProjectView.swift */; };
+		50DB8B1A204EBBCD0041ABFB /* FTToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB8B19204EBBCD0041ABFB /* FTToken.swift */; };
 		50F4100120496E400098CDA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4100020496E400098CDA1 /* AppDelegate.swift */; };
 		50F4101420496E400098CDA1 /* TaylorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101320496E400098CDA1 /* TaylorTests.swift */; };
 		50F4101F20496E400098CDA1 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F4101E20496E400098CDA1 /* TaylorUITests.swift */; };
@@ -80,6 +81,7 @@
 		503442CD204D9ED0006733D2 /* projects.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = projects.txt; sourceTree = "<group>"; };
 		50BCC66D204C82DD0097D775 /* TLProjectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TLProjectView.xib; sourceTree = "<group>"; };
 		50BCC66F204C82EA0097D775 /* TLProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLProjectView.swift; sourceTree = "<group>"; };
+		50DB8B19204EBBCD0041ABFB /* FTToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTToken.swift; sourceTree = "<group>"; };
 		50F40FFD20496E400098CDA1 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F4100020496E400098CDA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50F4100920496E400098CDA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				50F41036204971160098CDA1 /* FTApi.swift */,
 				50F41038204971160098CDA1 /* FTUser.swift */,
 				50F41034204971160098CDA1 /* FTProject.swift */,
+				50DB8B19204EBBCD0041ABFB /* FTToken.swift */,
 			);
 			path = FTApi;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				50F4103E204971170098CDA1 /* TLLogIndicator.swift in Sources */,
 				50F41040204971170098CDA1 /* TLLogView.swift in Sources */,
 				503442BD204D98B4006733D2 /* TLAutoCompletion.swift in Sources */,
+				50DB8B1A204EBBCD0041ABFB /* FTToken.swift in Sources */,
 				50F41048204971170098CDA1 /* FTApi.swift in Sources */,
 				50F4104D204971170098CDA1 /* TLEventMonitor.swift in Sources */,
 				50F4104F204971170098CDA1 /* TLResponseManager.swift in Sources */,
